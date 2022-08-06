@@ -16,8 +16,8 @@ Tabela de conteúdos
 
 - Automatize o processo de concessão/revogação ao acesso SSH em um grupo de servidores para um novo desenvolvedor. (Se preferir envie o endereço do git com a execução da tarefa)
   - Acesso [Playbooks](https://github.com/WagnerCOliveira/dotdigital_ias/tree/main/playbooks)
-  1. Para essa questão utilizei o ansible.
-  2. Foi criado uma playbook com duas roles, uma para concessão e outra para revogação.
+  
+  - Foi criado uma playbook com duas roles, uma para concessão e outra para revogação.
 
       - [x] Role - user_concessao
         - Para conceder acesso ao usuário.
