@@ -3,6 +3,8 @@ Playbooks
 
 Como rodar PLaybooks
 
+Instalação [ansible](https://github.com/WagnerCOliveira/dotdigital_ias#ansible)
+
 Examplo Playbook
 ----------------
 
