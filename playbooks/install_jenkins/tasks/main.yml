@@ -1,0 +1,16 @@
+# tasks file for install_jenkins
+---
+- name: Instalando pip docker, docker-compose
+  pip:
+    name: [ "docker", "docker-compose" ]
+
+- name: Clone Repos Git
+  become: false
+  git:
+    repo: git@github.com:WagnerCOliveira/jenkins.git
+    dest: /tmp/
+    force: yes
+  
+- name: Subindo Containers
+  docker_compose:
+    project_src: /tmp/jenkins
