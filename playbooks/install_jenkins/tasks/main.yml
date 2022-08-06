@@ -10,6 +10,14 @@
     repo: git@github.com:WagnerCOliveira/jenkins.git
     dest: /tmp/
     force: yes
+
+- name: Copy ".env" 
+  copy:
+    src: .env
+    dest: /tmp/.env
+    owner: ansible
+    group: ansible
+    mode: '0644'
   
 - name: Subindo Containers
   docker_compose:
