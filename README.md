@@ -15,9 +15,9 @@ Tabela de conteúdos
 ### Questões
 
 - Automatize o processo de concessão/revogação ao acesso SSH em um grupo de servidores para um novo desenvolvedor. (Se preferir envie o endereço do git com a execução da tarefa)
-
+  - Acesso [Playbooks](https://github.com/WagnerCOliveira/dotdigital_ias/tree/main/playbooks)
   1. Para essa questão utilizei o ansible.
-  2.  Foi criado uma playbook com duas roles, uma para concessão e outra para revogação.
+  2. Foi criado uma playbook com duas roles, uma para concessão e outra para revogação.
 
       - [x] Role - user_concessao
         - Para conceder acesso ao usuário.
@@ -26,11 +26,13 @@ Tabela de conteúdos
 
 - Elabore um script que, ao ser executado dentro de um container Docker, escreva em um arquivo a lista de todos os containers ativos na máquina que este container está sendo executado (máquina host) no momento da execução. (Se preferir envie o endereço do git com a execução da tarefa)
 
-  - [Docker](https://github.com/WagnerCOliveira/dotdigital_ias/tree/main/docker)
+  - Acesso ao script [Docker](https://github.com/WagnerCOliveira/dotdigital_ias/tree/main/docker)
   
 
 - Provisione duas instâncias de máquinas virtuais (preferencialmente na AWS) via Terraform. Utilizando o Ansible, em uma das VMs, faça a instalação de uma ferramenta de CI/CD e configure uma pipeline de deploy para uma aplicação open-source de sua escolha (ou faça uma simples API com um endpoint de retorno), tendo como destino para este deploy a segunda VM, onde a aplicação irá rodar. (Envie o endereço do git com a execução da tarefa)
-  - [Terraform](https://github.com/WagnerCOliveira/dotdigital_ias/tree/main/terraform)
+  - Acesso as configurações de [Terraform](https://github.com/WagnerCOliveira/dotdigital_ias/tree/main/terraform)
+  - Acesso as configurações de instalação da ferramenta CI/CD [install_jenkins](https://github.com/WagnerCOliveira/jenkins)
+  - Acesso ao Jenkinsfile do deploy da aplicação open-source [Jenkinsfile](https://github.com/WagnerCOliveira/dotdigital/blob/step4/Jenkinsfile)
 
 
 ### Ferramentas Utilizadas
