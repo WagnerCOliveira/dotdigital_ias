@@ -1,0 +1,7 @@
+---
+# tasks file for user_revogacao
+- name: Remove the user {{ user }}
+  user:
+    name: '{{ user }}'
+    state: absent
+    remove: yes

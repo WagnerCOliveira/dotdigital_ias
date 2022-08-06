@@ -1,0 +1,22 @@
+---
+# tasks file for user_create
+- name: Verifique se o usuário {{ user }} existe
+  getent:
+    database: passwd
+    key: "{{ user }}"
+    fail_key: False
+
+- name: Criando Usuário {{ user }}
+  user:
+    name: '{{ user }}'
+    shell: /bin/bash    
+    password: '{{ password }}'
+    state: present
+  when: ansible_facts.getent_passwd != 'null'
+
+- name: Copiando Chave publica
+  authorized_key:
+    user: '{{ user }}'
+    state: present
+    key: "{{ lookup('file', '{{ dir }}/{{ user }}.pub') }}"
+  when: ansible_facts.getent_passwd != 'null'
